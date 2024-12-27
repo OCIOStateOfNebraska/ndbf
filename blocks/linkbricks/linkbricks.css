@@ -1,0 +1,17 @@
+.linkbricks .linkbrick-item
+{
+    padding: 0 0 16px 0;
+}
+
+.linkbricks .linkbrick-item-red
+{
+    background:  #B92355;
+}
+
+.linkbricks a
+{
+    color: white;
+    background-color: inherit;
+    text-align: center;
+    text-decoration: none;
+}
