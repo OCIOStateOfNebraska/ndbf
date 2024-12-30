@@ -3,16 +3,35 @@
  */
 
 export default function decorate(block) {
-    const columnRows = 0;
+    let columnRows = 0;
+    let column = document.createElement('div');
+    const mainDiv = document.createElement('div');
+
     [...block.children].forEach((row) => {
         // decorate link brick item label
+        let colAdd = 0;
+
+        const brickDesc = row.firstElementChild ? row.firstElementChild.innerText : '';
+
+        if (brickDesc.toLowerCase().includes('small')) {
+            colAdd = 1;
+        }
+        else if (brickDesc.toLowerCase().includes('large')) {
+            colAdd = 2;
+        }
+
+        if (columnRows + colAdd > 2)
+        {
+            column = document.createElement('div');
+            columnRows = 0;
+        }
+        else
+        {
+            columnRows += colAdd;
+        }
+
         const linkbrick = document.createElement('div');
         linkbrick.className = 'linkbrick-item';
-       
-        const brickDesc = brickDesc.firstElementChild ? brickDesc.firstElementChild.innerText : '';
-        if (brickDesc.toLowerCase().includes('small')) {
-    
-        }
 
         const linkChild = row.lastElementChild;
         const label = linkChild.firstElementChild ? linkChild.firstElementChild.innerText : '';
@@ -40,7 +59,8 @@ export default function decorate(block) {
         linkDiv.append(linkSpan);
         link.append(linkDiv);
         linkbrick.append(link);
-
-        row.replaceWith(linkbrick);
+        column.append(linkbrick);
+        mainDiv.append(column);
+        row.replaceWith(mainDiv);
     });
 }

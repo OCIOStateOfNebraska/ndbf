@@ -1,29 +1,29 @@
-.linkbricks .linkbrick-item
+.link-bricks .linkbrick-item
 {
     padding: 0 0 16px 0;
 }
 
-.linkbricks .linkbrick-green
+.link-bricks .linkbrick-green
 {
     background:  #B9BE40;
 }
 
-.linkbricks .linkbrick-red
+.link-bricks .linkbrick-red
 {
     background:  #B92355;
 }
 
-.linkbricks .linkbrick-gray
+.link-bricks .linkbrick-gray
 {
     background:  #B8C7D3;
 }
 
-.linkbricks .linkbrick-default
+.link-bricks .linkbrick-default
 {
     background:  #4C4D4F;
 }
 
-.linkbricks a
+.link-bricks a
 {
     color: white;
     background-color: inherit;
@@ -31,7 +31,26 @@
     text-decoration: none;
 }
 
-.linkbricks .linkbrick-column {
+.link-bricks > .linkbrick-column {
     display: flex;
-    flex-direction: column;
+    flex-direction: unset;
   }
+
+  .link-bricks > div {
+    display: flex;
+  }
+
+  @media (width >= 900px) {
+    .link-bricks > div {
+        align-items: center;
+        flex-direction: unset;
+        gap: 24px;
+    }
+}
+
+@media (width >= 900px) {
+    .link-bricks > div > div {
+        flex: 1;
+        order: unset;
+    }
+}
