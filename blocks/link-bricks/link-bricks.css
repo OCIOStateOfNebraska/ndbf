@@ -1,0 +1,37 @@
+.linkbricks .linkbrick-item
+{
+    padding: 0 0 16px 0;
+}
+
+.linkbricks .linkbrick-green
+{
+    background:  #B9BE40;
+}
+
+.linkbricks .linkbrick-red
+{
+    background:  #B92355;
+}
+
+.linkbricks .linkbrick-gray
+{
+    background:  #B8C7D3;
+}
+
+.linkbricks .linkbrick-default
+{
+    background:  #4C4D4F;
+}
+
+.linkbricks a
+{
+    color: white;
+    background-color: inherit;
+    text-align: center;
+    text-decoration: none;
+}
+
+.linkbricks .linkbrick-column {
+    display: flex;
+    flex-direction: column;
+  }
