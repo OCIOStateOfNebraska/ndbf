@@ -1,6 +1,22 @@
-footer {
+/* footer {
   background-color: var(--light-color);
   font-size: var(--body-font-size-xs);
+} */
+
+footer {
+  font-family: "Roboto",sans-serif !important;
+  background-color: #4C4D4F !important;
+  color: #FFFFFF;
+  margin: 50px 0 0 0;
+  border: none;
+  padding: 40px 25px;
+  line-height: 30px;
+  font-size: 14px;
+}
+
+footer a
+{
+  color: #FFFFFF !important;
 }
 
 footer .footer > div {
@@ -11,6 +27,24 @@ footer .footer > div {
 
 footer .footer p {
   margin: 0;
+}
+
+footer .footer .default-content-wrapper img
+{
+    width: 49%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    left: -15px;
+    max-width: 150px;
+    height:unset;
+}
+
+footer .columns img
+{
+  width: 175px;
+  height: unset;
+  padding-bottom: 10px;
 }
 
 @media (width >= 900px) {
