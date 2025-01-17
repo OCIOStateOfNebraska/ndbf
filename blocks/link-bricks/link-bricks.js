@@ -26,10 +26,10 @@ export default function decorate(block) {
     if (columnRows + colAdd > 2) {
       column = document.createElement('div');
       column.className = 'col-6';
-      columnRows = 0;
+      columnRows = 0; 
     }
-    else{
-      columnRows += colAdd;
+    else {
+      columnRows += colAdd; 
     }
  
     const linkChild = row.lastElementChild;
@@ -40,13 +40,13 @@ export default function decorate(block) {
     link.href = linkHref;
     const linkDiv = document.createElement('div');
 
-    if(brickDesc.toLowerCase().includes('green')) {
+    if (brickDesc.toLowerCase().includes('green')) {
       linkDiv.className = 'linkbrick-green';
     }
-    else if(brickDesc.toLowerCase().includes('red')) {
+    else if (brickDesc.toLowerCase().includes('red')) {
       linkDiv.className = 'linkbrick-red';
     }
-    else if(brickDesc.toLowerCase().includes('gray')) {
+    else if (brickDesc.toLowerCase().includes('gray')) {
       linkDiv.className = 'linkbrick-gray';
     }
     else {
@@ -54,7 +54,7 @@ export default function decorate(block) {
     }
 
     const linkSpan = document.createElement('span');
-    linkSpan.className="h2";
+    linkSpan.className = 'h2';
     linkSpan.textContent = label;
     linkDiv.append(linkSpan);
     link.append(linkDiv);
