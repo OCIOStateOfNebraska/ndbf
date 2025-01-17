@@ -16,20 +16,18 @@ export default function decorate(block) {
     const linkbrick = document.createElement('div');
     if (brickDesc.toLowerCase().includes('small')) {
       colAdd = 1;
-      linkbrick.className = 'linkbrick-item small';
-    }
-    else if (brickDesc.toLowerCase().includes('large')) {
+      linkbrick.className = 'linkbrick-item small'; 
+    } else if (brickDesc.toLowerCase().includes('large')) {
       colAdd = 2;
-      linkbrick.className = 'linkbrick-item large';
+      linkbrick.className = 'linkbrick-item large'; 
     }
 
     if (columnRows + colAdd > 2) {
       column = document.createElement('div');
       column.className = 'col-6';
       columnRows = 0; 
-    }
-    else {
-      columnRows += colAdd; 
+    } else {
+      columnRows += colAdd;
     }
  
     const linkChild = row.lastElementChild;
@@ -42,14 +40,11 @@ export default function decorate(block) {
 
     if (brickDesc.toLowerCase().includes('green')) {
       linkDiv.className = 'linkbrick-green';
-    }
-    else if (brickDesc.toLowerCase().includes('red')) {
+    } else if (brickDesc.toLowerCase().includes('red')) {
       linkDiv.className = 'linkbrick-red';
-    }
-    else if (brickDesc.toLowerCase().includes('gray')) {
+    } else if (brickDesc.toLowerCase().includes('gray')) {
       linkDiv.className = 'linkbrick-gray';
-    }
-    else {
+    } else {
       linkDiv.className = 'linkbrick-default';
     }
 
