@@ -3,39 +3,35 @@
  */
 
 export default function decorate(block) {
-    let columnRows = 0;
-    let column = document.createElement('div');
-    column.className = 'col-6';
-    const mainDiv = document.createElement('div');
-    mainDiv.className='row';
+  let columnRows = 0;
+  let column = document.createElement('div');
+  column.className = 'col-6';
+  const mainDiv = document.createElement('div');
+  mainDiv.className = 'row';
 
-    [...block.children].forEach((row) => {
-        // decorate link brick item label
-        let colAdd = 0;
+  [...block.children].forEach((row) => {
+    // decorate link brick item label
+    let colAdd = 0;
+    const brickDesc = row.firstElementChild ? row.firstElementChild.innerText : '';
+    const linkbrick = document.createElement('div');
+    if (brickDesc.toLowerCase().includes('small')) {
+        colAdd = 1;
+        linkbrick.className = 'linkbrick-item small';
+    }
+    else if (brickDesc.toLowerCase().includes('large')) {
+        colAdd = 2;
+        linkbrick.className = 'linkbrick-item large';
+    }
 
-        const brickDesc = row.firstElementChild ? row.firstElementChild.innerText : '';
-        
-        const linkbrick = document.createElement('div');
-        
-        if (brickDesc.toLowerCase().includes('small')) {
-            colAdd = 1;
-            linkbrick.className = 'linkbrick-item small';
-        }
-        else if (brickDesc.toLowerCase().includes('large')) {
-            colAdd = 2;
-            linkbrick.className = 'linkbrick-item large';
-        }
-
-        if (columnRows + colAdd > 2)
-        {
-            column = document.createElement('div');
-            column.className = 'col-6';
-            columnRows = 0;
-        }
-        else
-        {
-            columnRows += colAdd;
-        }
+    if (columnRows + colAdd > 2) {
+        column = document.createElement('div');
+        column.className = 'col-6';
+        columnRows = 0;
+    }
+    else
+    {
+        columnRows += colAdd;
+    }
  
         const linkChild = row.lastElementChild;
         const label = linkChild.firstElementChild ? linkChild.firstElementChild.innerText : '';
