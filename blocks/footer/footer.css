@@ -38,7 +38,6 @@ footer .footer > div {
     justify-content: space-between;
 
     >.section {
-      /* width: 22%; */
       flex: 1 1 calc(25% - 1rem); /* Example for 4 sections per row */
       
       h2 {
@@ -55,7 +54,6 @@ footer .footer > div {
       }
 
       p {
-        
         margin-top: 0.8em;
         margin-bottom: 0.25em;
 
@@ -103,7 +101,6 @@ footer .footer > div {
     }
     
     >.section:first-of-type {
-
       p:last-of-type {
         margin-left: -15px;
         margin-top: 0;
@@ -137,7 +134,7 @@ footer .footer > div {
       }
       
       ul li:last-child {
-        margin-right: 0px;
+        margin-right: 0;
       }
 
       ul li:last-child::after {
