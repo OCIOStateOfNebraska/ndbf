@@ -13,7 +13,7 @@
 
 .linkbrick-item.small
 {
-    padding: 0 0 16px 0;
+    padding: 0 0 16px;
 }
 
 .linkbrick-item.large
@@ -21,6 +21,14 @@
     height: 100%; /* Or set a specific height like 200px */
     display: flex;
     align-items: stretch;
+}
+
+.link-bricks a
+{
+    color: white;
+    background-color: inherit;
+    text-align: center;
+    text-decoration: none;
 }
 
 .linkbrick-item.large a 
@@ -68,31 +76,20 @@
     align-items: center;
 }
 
-.link-bricks a
-{
-    color: white;
-    background-color: inherit;
-    text-align: center;
-    text-decoration: none;
-}
-
 .link-bricks > .linkbrick-column {
     display: flex;
     flex-direction: unset;
-  }
+}
 
-  .link-bricks > div {
+.link-bricks > div {
     display: flex;
+}
+
+@media (width >= 900px) {
+  .link-bricks > div {
+    align-items: center;
+    flex-direction: unset;
   }
-
-
-  @media (width >= 900px) {
-    .link-bricks > div {
-        align-items: center;
-        flex-direction: unset;
-        /* gap: 24px; */
-        /* height: 100px; */
-    }
 }
 
 @media (width >= 900px) {

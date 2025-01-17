@@ -25,7 +25,7 @@ npm i
 npm run lint
 ```
 
-## Local development
+## Local developmentcd..
 
 1. Create a new repository based on the `aem-boilerplate` template and add a mountpoint in the `fstab.yaml`
 1. Add the [AEM Code Sync GitHub App](https://github.com/apps/aem-code-sync) to the repository

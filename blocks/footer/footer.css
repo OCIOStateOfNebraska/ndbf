@@ -54,10 +54,6 @@ footer .footer > div {
         }
       }
 
-      p:first-of-type {
-        margin-top: 0;
-      }
-
       p {
         
         margin-top: 0.8em;
@@ -66,6 +62,10 @@ footer .footer > div {
         .icon { 
           background-color: white;
         }
+      }
+
+      p:first-of-type {
+        margin-top: 0;
       }
 
       img:first-of-type {
@@ -100,13 +100,14 @@ footer .footer > div {
           }
         }
       }
-
     }
     
     >.section:first-of-type {
+
       p:last-of-type {
         margin-left: -15px;
         margin-top: 0;
+
         img {
           width: 40%;
           max-width: 150px;
@@ -145,54 +146,3 @@ footer .footer > div {
     }
   }
 }
-
-/*Old CSS */
-/* footer {
-  font-family: "Roboto",sans-serif !important;
-  background-color: #4C4D4F !important;
-  color: #FFFFFF;
-  margin: 50px 0 0 0;
-  border: none;
-  padding: 40px 25px;
-  line-height: 30px;
-  font-size: 14px;
-} 
-
-footer a
-{
-  color: #FFFFFF !important;
-}
-
-footer .footer > div {
-  margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
-}
-
-footer .footer p {
-  margin: 0;
-}
-
-footer .footer .default-content-wrapper img
-{
-    width: 49%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    position: relative;
-    left: -15px;
-    max-width: 150px;
-    height:unset;
-}
-
-footer .columns img
-{
-  width: 175px;
-  height: unset;
-  padding-bottom: 10px;
-}
-
-@media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
-  }
-}*/
