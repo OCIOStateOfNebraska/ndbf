@@ -16,20 +16,20 @@ export default function decorate(block) {
     const linkbrick = document.createElement('div');
     if (brickDesc.toLowerCase().includes('small')) {
       colAdd = 1;
-      linkbrick.className = 'linkbrick-item small'; 
+      linkbrick.className = 'linkbrick-item small';
     } else if (brickDesc.toLowerCase().includes('large')) {
       colAdd = 2;
-      linkbrick.className = 'linkbrick-item large'; 
+      linkbrick.className = 'linkbrick-item large';
     }
 
     if (columnRows + colAdd > 2) {
       column = document.createElement('div');
       column.className = 'col-6';
-      columnRows = 0; 
+      columnRows = 0;
     } else {
       columnRows += colAdd;
     }
- 
+
     const linkChild = row.lastElementChild;
     const label = linkChild.firstElementChild ? linkChild.firstElementChild.innerText : '';
     const linkHref = linkChild.firstElementChild && linkChild.firstElementChild.lastElementChild ? linkChild.firstElementChild.lastElementChild.href : '#';
