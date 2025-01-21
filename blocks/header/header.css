@@ -257,7 +257,7 @@ header nav .nav-sections ul > li > ul > li {
     left: -24px;
     width: 200px;
     top: 130%;
-    padding: 0px;
+    padding: 0;
     background-color: var(--dark-gray);
     white-space: initial;
     text-align: left;
