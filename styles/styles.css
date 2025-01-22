@@ -234,10 +234,10 @@ main img {
   mask-repeat: no-repeat;
 }
 
-.icon img {
+/* .icon img {
   height: 100%;
   width: 100%;
-}
+} */
 
 /* sections */
 main > .section {

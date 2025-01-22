@@ -14,11 +14,14 @@
   .accordion details summary {
     position: relative;
     padding: 0 16px;
+    padding: 18px;
     padding-right: 46px;
     cursor: pointer;
     list-style: none;
     overflow: auto;
-    transition: background-color 0.2s;
+    /* transition: background-color 0.2s; */
+    transition: 0.4s;
+    color: var(--dark-gray);
   }
   
   .accordion details[open] summary {
