@@ -11,6 +11,7 @@
 
 .hero h1 {
   background-color: var(--light-gray);
+  
   /* width: 100%; */
   margin: -8px 0 0;
   padding: 20px calc((100% - 1200px)/2);
