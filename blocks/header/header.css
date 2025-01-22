@@ -347,15 +347,19 @@ main nav.breadcrumbs {
     display: flex;
 
     li {
-      font-size: var(--body-font-size-s);
+      /* font-size: var(--body-font-size-xs); */
+      font-size: 13px;
+
 
        &::after {
         content: '/';
-        margin: 0 20px;
+        margin: 0 10px;
         color: var(--gray);
        }
 
        &:last-of-type {
+        color: #777;
+
         &::after {
           content: '';
         }
