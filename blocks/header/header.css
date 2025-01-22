@@ -329,7 +329,6 @@ main nav.breadcrumbs {
        }
 
        &:last-of-type {
-
         color: #777;
 
         &::after {
