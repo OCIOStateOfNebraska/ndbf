@@ -27,6 +27,7 @@
   --text-color: #131313;
   --link-color: var(--blue);
   --link-hover-color: var(--green);
+  --nav-drop-color: #717171;
 
   /* fonts */
   --body-font-family: "Roboto", sans-serif;

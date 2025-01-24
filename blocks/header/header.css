@@ -213,13 +213,17 @@ header nav .nav-sections ul > li > ul > li {
     border: 2px solid currentcolor;
     border-radius: 0 1px 0 0;
     border-width: 2px 2px 0 0; */
+
+    /* content: '▼'!important; */
+
     content: '';
+    color: var(--nav-drop-color);
     display: inline-block;
     position: absolute;
-    top: 50%;
-    bottom: 50%;
-    right: 2px;
-    transform: rotate(225deg);
+    top: 35%;
+    bottom: 65%;
+    right: 15px;
+    transform: rotate(315deg);
     width: 6px;
     height: 6px;
     border: 2px solid currentcolor;
@@ -233,9 +237,10 @@ header nav .nav-sections ul > li > ul > li {
     bottom: 0.5em;
     transform: rotate(315deg);
     */
-    top: 50%;
-    bottom: 50%;
+    top: 35%;
+    bottom: 65%;
     transform: rotate(135deg);
+    color: var(--yellow);
   }
   
   header nav .nav-sections ul {
@@ -261,16 +266,9 @@ header nav .nav-sections ul > li > ul > li {
       padding-bottom: 10px;
       font-size: 45px;
       background-color: var(--lighter-gray);
+      mask-position: center;
     }
   }
-
-  /* height: 25px;
-      width: auto;
-      background-color: var(--lighter-gray);
-      opacity: 0.6;
-      mask-position: center;
-      margin-bottom: 15px;
-      */
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul {
     display: none;
