@@ -184,6 +184,31 @@ header nav .nav-sections ul > li > ul > li {
   font-weight: 400;
 }
 
+/* LOCATION TO MODIFY NAV DROP-DOWN SMALLER THAN 900px */
+@media (width < 900px) {
+  header nav .nav-sections .nav-drop {
+    /* font-size: 30px; */
+    font-size: 2.25rem;
+    color: var(--yellow);
+  }
+
+  header nav .nav-sections .nav-drop .icon {
+    background-color: var(--yellow);
+
+    /* visibility: hidden;
+    width: 0; */
+    margin-right: .5em;
+  }
+
+  header nav .nav-sections ul {
+    /* background-color: blue; */
+    color: white;
+
+    /* font-size: 18px; */
+    font-size: 1.15rem;
+  }
+}
+
 @media (width >= 900px) {
   header nav .nav-sections {
     display: block;
@@ -202,7 +227,7 @@ header nav .nav-sections ul > li > ul > li {
   }
 
   header nav .nav-sections .nav-drop::after {
-    content: '';
+    /* content: '';
     display: inline-block;
     position: absolute;
     top: 0.5em;
@@ -212,13 +237,35 @@ header nav .nav-sections ul > li > ul > li {
     height: 6px;
     border: 2px solid currentcolor;
     border-radius: 0 1px 0 0;
+    border-width: 2px 2px 0 0; */
+
+    /* content: '▼'!important; */
+    content: '';
+    color: var(--nav-drop-color);
+    display: inline-block;
+    position: absolute;
+    top: 35%;
+    bottom: 65%;
+    right: 15px;
+    transform: rotate(315deg);
+    width: 6px;
+    height: 6px;
+    border: 2px solid currentcolor;
+    border-radius: 0 1px 0 0;
     border-width: 2px 2px 0 0;
   }
 
   header nav .nav-sections .nav-drop[aria-expanded='true']::after {
+    /*
     top: unset;
     bottom: 0.5em;
     transform: rotate(315deg);
+    */
+    top: 35%;
+    bottom: 65%;
+    transform: rotate(135deg);
+
+    /* color: var(--yellow); */
   }
   
   header nav .nav-sections ul {
@@ -233,16 +280,18 @@ header nav .nav-sections ul > li > ul > li {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 100%;
-    font-size: var(--heading-font-size-s);
+    width: 7.5em;
+    font-size: var(--heading-font-size-xxs);
+    font-family: Montserrat, sans-serif !important;
+    color: var(--light-color);
 
     > .icon {
-      height: 25px;
-      width: auto;
-      background-color: var(--light-gray);
-      opacity: 0.6;
+      display: block;
+      opacity: .6;
+      padding-bottom: 10px;
+      font-size: 45px;
+      background-color: var(--lighter-gray);
       mask-position: center;
-      margin-bottom: 15px;
     }
   }
 
