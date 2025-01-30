@@ -184,6 +184,31 @@ header nav .nav-sections ul > li > ul > li {
   font-weight: 400;
 }
 
+/* LOCATION TO MODIFY NAV DROP-DOWN SMALLER THAN 900px */
+@media (width < 900px) {
+  header nav .nav-sections .nav-drop {
+    /* font-size: 30px; */
+    font-size: 2.25rem;
+    color: var(--yellow);
+  }
+
+  header nav .nav-sections .nav-drop .icon {
+    background-color: var(--yellow);
+
+    /* visibility: hidden;
+    width: 0; */
+    margin-right: .5em;
+  }
+
+  header nav .nav-sections ul {
+    /* background-color: blue; */
+    color: white;
+
+    /* font-size: 18px; */
+    font-size: 1.15rem;
+  }
+}
+
 @media (width >= 900px) {
   header nav .nav-sections {
     display: block;
@@ -215,7 +240,6 @@ header nav .nav-sections ul > li > ul > li {
     border-width: 2px 2px 0 0; */
 
     /* content: '▼'!important; */
-
     content: '';
     color: var(--nav-drop-color);
     display: inline-block;
@@ -240,7 +264,8 @@ header nav .nav-sections ul > li > ul > li {
     top: 35%;
     bottom: 65%;
     transform: rotate(135deg);
-    color: var(--yellow);
+
+    /* color: var(--yellow); */
   }
   
   header nav .nav-sections ul {
