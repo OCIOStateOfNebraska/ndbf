@@ -1,7 +1,10 @@
 .video {
     text-align: center;
-    max-width: 900px;
-    margin: 24px auto;
+    
+    /* max-width: 900px;
+    margin: 24px auto; */
+    width: 560px;
+    margin: 24px 0;
   }
   
   .video[data-embed-loaded='false']:not(.placeholder) {

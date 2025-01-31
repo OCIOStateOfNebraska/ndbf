@@ -1,0 +1,23 @@
+.feature-well-wrapper {
+    width: 75vw;
+    background-color: var(--lighter-gray);
+    padding: 5px 24px 15px !important;
+}
+
+.feature-well h3 {
+    font-family: Roboto, sans-serif !important;
+    font-weight: 100 !important;
+}
+
+.feature-well p {
+    font-family: Roboto, sans-serif !important;
+    font-weight: 100 !important;
+    font-size: var(--body-font-size-s) !important;
+}
+
+@media (width < 900px) {
+    .feature-well-wrapper {
+        width: 90vw !important;
+        min-width: 90% !important;
+    }
+}
