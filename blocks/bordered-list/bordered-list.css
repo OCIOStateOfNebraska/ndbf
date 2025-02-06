@@ -1,0 +1,16 @@
+.bordered-list > div > div > ol > li {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border: 0;
+    border-bottom: 1px solid var(--lighter-gray);
+}
+
+.bordered-list > div > div > ol > li > .icon {
+    background-color: var(--lighter-gray);
+    height: 18px;
+    width: 18px;
+}
+
+.bordered-list > div > div > ol {
+    padding-left: 25px;
+}
