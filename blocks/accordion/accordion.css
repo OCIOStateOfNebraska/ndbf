@@ -102,3 +102,26 @@
     border-top: 1px solid #dadada;
     background-color: var(--background-color);
   }
+
+  .accordion > details > div > p > hr {
+    border: none;
+    border-top: 1px solid var(--light-gray);
+  }
+
+  /* styles for an accordion which will put borders under each list item */
+  .accordion.list-divider > details > div > p > ol > li {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border: 0;
+    border-bottom: 1px solid var(--lighter-gray);
+  }
+
+  .accordion.list-divider > details > div > p > ol > li > .icon {
+    background-color: var(--lighter-gray);
+    height: 18px;
+    width: 18px;
+}
+
+.accordion.list-divider > details > div > p > ol {
+  padding-left: 25px;
+}
