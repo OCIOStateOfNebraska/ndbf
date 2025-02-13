@@ -78,7 +78,6 @@ export async function fetchData(source) {
     console.error('empty API response', source);
     return null;
   }
-
   return json.data;
 }
 
@@ -196,17 +195,11 @@ async function handleSearch(e, block, config) {
     window.history.replaceState({}, '', url.toString());
   }
 
-  /* if (searchValue.length < 3) {
+  if (searchValue.length < 3) {
     clearSearch(block);
     return;
-  } */
-
+  }
   const searchTerms = searchValue.toLowerCase().split(/\s+/).filter((term) => !!term);
-  /* const url = 'https://www.google.com/search?q=' + encodeURIComponent(searchTerms); */
-  const url = 'https://www.google.com/search?q='.concat(encodeURIComponent(searchTerms));
-  /* window.location.href = url; */
-  window.open(url, '_blank');
-  clearSearch(block);
 
   const data = await fetchData(config.source);
   const filteredData = filterData(searchTerms, data);
@@ -229,14 +222,8 @@ function searchInput(block, config) {
   input.placeholder = searchPlaceholder;
   input.setAttribute('aria-label', searchPlaceholder);
 
-  /* input.addEventListener('input', (e) => {
+  input.addEventListener('input', (e) => {
     handleSearch(e, block, config);
-  }); */
-
-  input.addEventListener('keyup', (e) => {
-    if (e.key === 'Enter') {
-      handleSearch(e, block, config);
-    }
   });
 
   input.addEventListener('keyup', (e) => { if (e.code === 'Escape') { clearSearch(block); } });
@@ -244,18 +231,17 @@ function searchInput(block, config) {
   return input;
 }
 
-/* this is not currently used for removal of search icon */
-/* function searchIcon() {
+function searchIcon() {
   const icon = document.createElement('span');
   icon.classList.add('icon', 'icon-search');
   return icon;
-} */
+}
 
-/* 'searchIcon(),' removed from the box.append call before adding the searchInput() */
 function searchBox(block, config) {
   const box = document.createElement('div');
   box.classList.add('search-box');
   box.append(
+    searchIcon(),
     searchInput(block, config),
   );
 
