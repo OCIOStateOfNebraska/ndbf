@@ -28,6 +28,9 @@
   --link-color: var(--blue);
   --link-hover-color: var(--green);
   --nav-drop-color: #717171;
+  --publication-body: #000000B3;
+  --teaser-main-content-title: #00607DCC;
+  --teaser-second-content-title: #FFFC;
 
   /* fonts */
   --body-font-family: "Roboto", sans-serif;

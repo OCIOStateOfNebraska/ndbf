@@ -24,7 +24,7 @@
   padding-top: .5rem;
 }
 
-.h1-wrapper {
+.hero .h1-wrapper {
   background-color: var(--light-gray);
   padding: 20px calc((100% - 1200px)/2);
   margin: -8px 0 0;
