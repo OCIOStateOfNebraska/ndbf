@@ -9,6 +9,7 @@
     padding: 16px;
     font-size: 26px;
     position: relative;
+    line-height: 1.1;
 }
 
 .linkbrick-item.small
@@ -97,5 +98,82 @@
         flex: 1;
         order: unset;
         height: 100%;
+    }
+}
+
+/* 'NESTED' CLASS EXTENSION CSS STYLINGS *********************************************************************************************** */
+@media(width >= 900px) {
+    .link-bricks.nested.block {
+        width: 36%;
+        position: relative;
+        float: right;
+        bottom: 13.5rem;
+    }
+
+    .link-bricks.nested .linkbrick-item.large {
+        padding: 0 15px 0 0;
+        height: 209px;
+        position: relative;
+        bottom: 0.5rem;
+    }
+
+    .link-bricks.nested .linkbrick-item.small {
+        position: relative;
+        padding-left: 15px;
+    }
+
+    .link-bricks.nested .linkbrick-item.small h2 {
+        padding: 16px 30px;
+    }
+
+    .link-bricks.nested .linkbrick-gray {
+        margin-top: 15px;
+        position: relative;
+    }
+
+    .link-bricks.nested .linkbrick-green .h2 {
+        padding: 16px 30px;
+    }
+
+    .link-bricks.nested .linkbrick-gray .h2 {
+        padding: 16px 30px;
+    }
+}
+
+@media(width < 900px) {
+    .link-bricks.nested.block {
+        padding-top: 20px;
+    }
+
+    .link-bricks.nested.block .col-6:nth-of-type(1) {
+        width: 50%;
+        padding-right: 15px;
+    }
+
+    .link-bricks.nested.block .col-6:nth-of-type(2) {
+        width: 50%;
+        padding-left: 15px;
+    }
+
+    .link-bricks.nested.block .linkbrick-item.large .linkbrick-red .h2{
+        width: 50%;
+    }
+
+    .link-bricks.nested.block .linkbrick-item.small:nth-of-type(1) {
+        padding: unset;
+        padding-bottom: 15px;
+    }
+
+    .link-bricks.nested.block .linkbrick-item.small:nth-of-type(2) {
+        padding: unset;
+        padding-top: 15px;
+    }
+
+    .link-bricks.nested.block .linkbrick-item.small .linkbrick-gray {
+        padding: 10px;
+    }
+    
+    .link-bricks.nested.block .linkbrick-item.small .linkbrick-green {
+        padding: 10px;
     }
 }
