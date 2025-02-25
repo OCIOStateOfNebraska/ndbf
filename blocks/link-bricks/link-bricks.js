@@ -58,4 +58,11 @@ export default function decorate(block) {
     mainDiv.append(column);
     row.replaceWith(mainDiv);
   });
+
+  // 'nested' extension consideration
+  const b = document.querySelector('.link-bricks.nested.block');
+  if (b) {
+    const teaserBlock = document.querySelector('.teaser.block');
+    teaserBlock.append(b);
+  }
 }
