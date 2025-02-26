@@ -31,6 +31,10 @@
   --publication-body: #000000B3;
   --teaser-main-content-title: #00607DCC;
   --teaser-second-content-title: #FFFC;
+  --icon-list-off-yellow: #feedc7;
+  --icon-list-off-green: #dde4a0;
+  --icon-list-off-blue: #99c3d4;
+  --icon-list-off-red: #e7a3b8; 
 
   /* fonts */
   --body-font-family: "Roboto", sans-serif;
