@@ -1,0 +1,203 @@
+@media (width < 900px) {
+    .icon-list-container {
+        margin: 0;
+    }
+
+    .icon-list.block div > a {
+        font-size: var(--heading-font-size-s);
+    }
+}
+
+@media (width >= 900px) {
+    .icon-list-container {
+        position: relative;
+    }
+
+    .icon-list.block div > a {
+        font-size: var(--heading-font-size-l);
+    }
+}
+
+.icon-list-container {
+    display: flex;
+    width: 100%;
+    bottom: 12.5rem;
+}
+
+.icon-list-wrapper {
+    width: 100%;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+.icon-list.block {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.icon-list.block > div {
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+}
+
+.icon-list.block div > a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    margin: 15px;
+    height: 100%;
+    aspect-ratio: 4 / 3;
+    border-radius: 5px;
+}
+
+.icon-list.block div > a > .icon {
+    width: 85px;
+    height: 85px;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+/* styles required before ':hover' for eslint checks */
+.icon-list.green.block div > a {
+    background-color: white;
+    border: 2px solid var(--green);
+}
+
+.icon-list.green.block div > a > .icon {
+    background-color: var(--green);
+}
+
+.icon-list.blue.block div > a {
+    background-color: white;
+    border: 2px solid var(--blue);
+}
+
+.icon-list.blue.block div > a > .icon {
+    background-color: var(--blue);
+}
+
+.icon-list.red.block div > a {
+    background-color: white;
+    border: 2px solid var(--red);
+}
+
+.icon-list.red.block div > a > .icon {
+    background-color: var(--red);
+}
+
+.icon-list.solid.block div > a {
+    aspect-ratio: 6 / 3;
+}
+
+.icon-list.wide.block > div > a {
+    aspect-ratio: 7 / 3;
+}
+
+/* yellow */
+.icon-list.yellow.block div > a > .icon {
+    background-color: var(--yellow);
+}
+
+.icon-list.yellow.block div > a {
+    background-color: white;
+    border: 2px solid var(--yellow);
+}
+
+.icon-list.yellow.block div > a:hover {
+    text-decoration: none;
+        color: var(--link-color);
+        background-color: var(--yellow);
+}
+
+.icon-list.yellow.block div > a:hover .icon {
+    transition: all .5s ease;
+    background-color: white;
+}
+
+.icon-list-container:has(.icon-list.yellow.block) {
+    background-color: var(--icon-list-off-yellow);
+}
+
+/* green */
+
+.icon-list.green.block div > a:hover {
+    text-decoration: none;
+    color: var(--link-color);
+    background-color: var(--green);
+}
+
+.icon-list.green.block div > a:hover .icon {
+    transition: all .5s ease;
+    background-color: white;
+}
+
+.icon-list-container:has(.icon-list.green.block) {
+    background-color: var(--icon-list-off-green);
+}
+
+/* blue */
+
+
+.icon-list.blue.block div > a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: var(--blue);
+}
+
+.icon-list.blue.block div > a:hover .icon {
+    transition: all .5s ease;
+    background-color: white;
+}
+
+.icon-list-container:has(.icon-list.blue.block) {
+    background-color: var(--icon-list-off-blue);
+}
+
+/* red */
+.icon-list.red.block div > a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: var(--red);
+}
+
+.icon-list.red.block div > a:hover .icon {
+    transition: all .5s ease;
+    background-color: white;
+}
+
+.icon-list-container:has(.icon-list.red.block) {
+    background-color: var(--icon-list-off-red);
+}
+
+/* solid ************************************************** */
+.icon-list.solid.block > div {
+    max-width: 375px;
+}
+
+.icon-list-container:has(.icon-list.solid.block) {
+    background-color: initial;
+}
+
+/* solid blue */
+.icon-list.solid.blue.block div > a {
+    background-color: var(--blue);
+    color: white;
+}
+
+.icon-list.solid.blue.block div > a:hover {
+    opacity: .7;
+}
+
+.icon-list.solid.blue.block div > a > .icon {
+    background-color: white;
+    opacity: .7;
+}
+
+/* wide *************************************************************** */
+.icon-list.wide.block > div {
+    max-width: 450px;
+}
