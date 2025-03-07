@@ -3,10 +3,6 @@
   flex-direction: column;
 }
 
-.columns img {
-  width: 100%;
-}
-
 .columns > div > div {
   order: 1;
 }
@@ -30,4 +26,10 @@
     flex: 1;
     order: unset;
   }
+}
+
+.columns .icon {
+  background-color: var(--lighter-gray);
+  height: 18px;
+  width: 18px;
 }
