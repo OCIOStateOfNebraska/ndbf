@@ -32,7 +32,7 @@
   }
 }
 
-.columns.columns-2-cols .icon {
+.columns .icon img{
   background-color: var(--lighter-gray);
   height: 18px;
   width: 18px;

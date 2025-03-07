@@ -16,7 +16,7 @@ export default function decorate(block) {
       }
     });
   });
-  const aTags = document.querySelectorAll('a');
+  const aTags = ocument.querySelectorAll('a');
   const fragment = document.createDocumentFragment();
   aTags.forEach((aTag) => {
     const href = aTag.getAttribute('href');
@@ -26,12 +26,14 @@ export default function decorate(block) {
       spanElement.style = 'mask-image: url("/icons/file-image.svg")';
       fragment.appendChild(spanElement);
       aTag.parentNode.insertBefore(spanElement, aTag);
+
     } else {
       const spanElement = document.createElement('span');
       spanElement.classList = 'icon icon-file-image';
       spanElement.style = 'mask-image: url("/icons/file.svg")';
       fragment.appendChild(spanElement);
       aTag.parentNode.insertBefore(spanElement, aTag);
+      const imgelement = document.getElementByTagName("img"); 
     }
   });
   document.body.appendChild(fragment);
