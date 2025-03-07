@@ -11,6 +11,12 @@
   order: 1;
 }
 
+.columns .icon img{
+  background-color: var(--lighter-gray);
+  height: 18px;
+  width: 18px;
+}
+
 .columns > div > .columns-img-col {
   order: 0;
 }
@@ -32,8 +38,3 @@
   }
 }
 
-.columns .icon img{
-  background-color: var(--lighter-gray);
-  height: 18px;
-  width: 18px;
-}
