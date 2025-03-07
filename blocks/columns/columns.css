@@ -31,3 +31,9 @@
     order: unset;
   }
 }
+
+.columns.columns-2-cols .icon {
+  background-color: var(--lighter-gray);
+  height: 18px;
+  width: 18px;
+}
