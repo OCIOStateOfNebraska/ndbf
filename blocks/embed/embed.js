@@ -57,11 +57,8 @@ const embedTwitter = (url) => {
 
 const embedAdobe = (url) => {
   const embedHTML =`<div class="content-padding">
-
-
- <h1>Contact Us</h1>
 <b><br>
-<iframe id="aemform" src="https://publish-p149152-e1521617.adobeaemcloud.com/content/forms/af/ncrb/contact-ncrb.html" style="width:100%; height:100vh; border:none;"> </iframe>
+<iframe id="aemform" src="https://publish-p149152-e1521617.adobeaemcloud.com/content/forms/af/ncrb/contact-ncrb.html" style="width:200%; height:100vh; border:none;"> </iframe>
 	<script>
   iframeResize({
     license: 'GPLv3',
