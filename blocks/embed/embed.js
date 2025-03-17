@@ -55,6 +55,27 @@ const embedTwitter = (url) => {
   return embedHTML;
 };
 
+const embedAdobe = (url) => {
+  const embedHTML =`<div class="content-padding">
+
+
+ <h1>Care Giver Questionnaire - DHHS</h1>
+
+<iframe id="aemform" src="https://publish-p149152-e1521617.adobeaemcloud.com/content/forms/af/ncrb/contact-ncrb.html" style="width:100%; height:100vh; border:none;"> </iframe>
+	<script src="https://cdn.jsdelivr.net/npm/@iframe-resizer/parent@5.3.2"></script>
+	<script>
+  iframeResize({
+    license: 'GPLv3',
+    waitForLoad: true,
+  }, '#aemform');
+</script>
+
+
+
+</div>`;
+  return embedHTML;
+};
+
 const loadEmbed = (block, link, autoplay) => {
   if (block.classList.contains('embed-is-loaded')) {
     return;
@@ -72,6 +93,10 @@ const loadEmbed = (block, link, autoplay) => {
     {
       match: ['twitter'],
       embed: embedTwitter,
+    },
+    {
+      match: ['adobe'],
+      embed: embedAdobe,
     },
   ];
 
