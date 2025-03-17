@@ -56,17 +56,18 @@ const embedTwitter = (url) => {
 };
 
 const embedAdobe = (url) => {
-  const embedHTML =`<div class="content-padding">
-<b><br>
-<iframe id="aemform" src="https://publish-p149152-e1521617.adobeaemcloud.com/content/forms/af/ncrb/contact-ncrb.html" style="width:200%; height:100vh; border:none;"> </iframe>
-	<script>
-  iframeResize({
-    license: 'GPLv3',
+  const embedHTML =`<div>
+<iframe id="aemform" src="${url}" style="width:200%; height:100vh; border:none;"> </iframe>
+<script>iframeResize({
+    license: "GPLv3",
     waitForLoad: true,
-  }, '#aemform');
+  }, "#aemform");
 </script>
 </div>`;
-loadScript("https://cdn.jsdelivr.net/npm/@iframe-resizer/parent@5.3.2");
+
+
+
+  loadScript("https://cdn.jsdelivr.net/npm/@iframe-resizer/parent@5.3.2");
   return embedHTML;
 };
 
