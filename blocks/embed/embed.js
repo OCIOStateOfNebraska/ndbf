@@ -57,7 +57,7 @@ const embedTwitter = (url) => {
 
 const embedAdobe = (url) => {
   const embedHTML =`<div>
-<iframe id="aemform" src="${url}" style="width:200%; height:100vh; border:none;"> </iframe>
+<iframe id="aemform" src="${url}" X-Frame-Options: DENY; style="width:200%; height:100vh; border:none;"> </iframe>
 <script src="https://cdn.jsdelivr.net/npm/@iframe-resizer/parent@5.3.2"></script>
 <script>iframeResize({
     license: "GPLv3",
